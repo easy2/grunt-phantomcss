@@ -21,7 +21,9 @@ module.exports = function(grunt) {
             screenshots: 'screenshots',
             results: 'results',
             viewportSize: [1280, 800],
-            logLevel: 'error'
+            mismatchTolerance: 0.05,
+            waitTimeout: 5000, // Set timeout to wait before throwing an exception
+            logLevel: 'warning' // debug/info/warning/error
         });
 
         // Timeout ID for message checking loop

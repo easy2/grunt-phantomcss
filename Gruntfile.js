@@ -34,7 +34,11 @@ module.exports = function(grunt) {
             visualTest: {
                 options: {
                     screenshots: 'fixtures/screenshots/',
-                    results: 'results/'
+                    results: 'results/',
+                    viewportSize: [1280, 800],
+                    mismatchTolerance: 0.05,
+                    waitTimeout: 5000,
+                    logLevel: 'warning' // debug/info/warning/error
                 },
                 src: [
                     'fixtures/coffeemachine_test.js'
